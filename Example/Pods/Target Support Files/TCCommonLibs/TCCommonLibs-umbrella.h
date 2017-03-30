@@ -1,5 +1,13 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
 #endif
 
 #import "NSBundle+Category.h"
@@ -12,7 +20,6 @@
 #import "TCImageURLSynthesizer.h"
 #import "TCCommonButton.h"
 #import "TCCommonIndicatorViewCell.h"
-#import "TCCommonInputViewCell.h"
 #import "TCCommonSubtitleViewCell.h"
 #import "TCCommonSwitchViewCell.h"
 #import "TCDatePickerView.h"

@@ -20,32 +20,32 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TCCommonLibs (0.1.0):
-    - TCCommonLibs/Category (= 0.1.0)
-    - TCCommonLibs/Controller (= 0.1.0)
-    - TCCommonLibs/DicToModel (= 0.1.0)
-    - TCCommonLibs/Tools (= 0.1.0)
-    - TCCommonLibs/UI (= 0.1.0)
-    - TCCommonLibs/Utility (= 0.1.0)
-    - TCCommonLibs/WebService (= 0.1.0)
-  - TCCommonLibs/Category (0.1.0):
+  - TCCommonLibs (0.3.0):
+    - TCCommonLibs/Category (= 0.3.0)
+    - TCCommonLibs/Controller (= 0.3.0)
+    - TCCommonLibs/DicToModel (= 0.3.0)
+    - TCCommonLibs/Tools (= 0.3.0)
+    - TCCommonLibs/UI (= 0.3.0)
+    - TCCommonLibs/Utility (= 0.3.0)
+    - TCCommonLibs/WebService (= 0.3.0)
+  - TCCommonLibs/Category (0.3.0):
     - MBProgressHUD
     - SDWebImage
     - TCCommonLibs/Utility
-  - TCCommonLibs/Controller (0.1.0):
+  - TCCommonLibs/Controller (0.3.0):
     - TCCommonLibs/Category
-  - TCCommonLibs/DicToModel (0.1.0)
-  - TCCommonLibs/Tools (0.1.0):
+  - TCCommonLibs/DicToModel (0.3.0)
+  - TCCommonLibs/Tools (0.3.0):
     - TCCommonLibs/WebService
-  - TCCommonLibs/UI (0.1.0):
+  - TCCommonLibs/UI (0.3.0):
     - Masonry
     - MJRefresh
     - SDWebImage
     - TCCommonLibs/Category
     - TCCommonLibs/Tools
     - TCCommonLibs/Utility
-  - TCCommonLibs/Utility (0.1.0)
-  - TCCommonLibs/WebService (0.1.0):
+  - TCCommonLibs/Utility (0.3.0)
+  - TCCommonLibs/WebService (0.3.0):
     - AFNetworking
     - TCCommonLibs/Utility
 
@@ -62,8 +62,8 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TCCommonLibs: 52c044bc545d08b66143284e19ccdc0c63f77468
+  TCCommonLibs: 73289496ca23cfa95c880f516fa51a51576deca3
 
 PODFILE CHECKSUM: d155c35cce33436ff06936ef5c9f37021a0d6d67
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1.beta.1
