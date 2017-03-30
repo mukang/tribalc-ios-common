@@ -1,0 +1,6 @@
+framework module TCCommonLibs {
+  umbrella header "TCCommonLibs-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,109 @@
+{
+  "name": "TCCommonLibs",
+  "version": "0.1.0",
+  "summary": "A powerful common libs.",
+  "description": "TCCommonLibs is a powerful common libs.",
+  "homepage": "http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mukang": "mukang@buluo-gs.com"
+  },
+  "source": {
+    "git": "http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "resource_bundles": {
+    "TCCommonLibs": [
+      "TCCommonLibs/Assets/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Const",
+      "source_files": "TCCommonLibs/Classes/Const/**/*",
+      "public_header_files": "TCCommonLibs/Classes/Const/**/*.h"
+    },
+    {
+      "name": "Category",
+      "source_files": "TCCommonLibs/Classes/Category/**/*",
+      "public_header_files": "TCCommonLibs/Classes/Category/**/*.h",
+      "dependencies": {
+        "SDWebImage": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "TCCommonLibs/Const": [
+
+        ]
+      }
+    },
+    {
+      "name": "DicToModel",
+      "source_files": "TCCommonLibs/Classes/DicToModel/**/*",
+      "public_header_files": "TCCommonLibs/Classes/DicToModel/**/*.h"
+    },
+    {
+      "name": "Tools",
+      "source_files": "TCCommonLibs/Classes/Tools/**/*",
+      "public_header_files": "TCCommonLibs/Classes/Tools/**/*.h",
+      "dependencies": {
+        "TCCommonLibs/WebService": [
+
+        ]
+      }
+    },
+    {
+      "name": "WebService",
+      "source_files": "TCCommonLibs/Classes/WebService/**/*",
+      "public_header_files": "TCCommonLibs/Classes/WebService/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+
+        ],
+        "TCCommonLibs/Const": [
+
+        ]
+      }
+    },
+    {
+      "name": "Controller",
+      "source_files": "TCCommonLibs/Classes/Controller/**/*",
+      "public_header_files": "TCCommonLibs/Classes/Controller/**/*.h",
+      "dependencies": {
+        "TCCommonLibs/Category": [
+
+        ]
+      }
+    },
+    {
+      "name": "UI",
+      "source_files": "TCCommonLibs/Classes/UI/**/*",
+      "public_header_files": "TCCommonLibs/Classes/UI/**/*.h",
+      "dependencies": {
+        "SDWebImage": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "TCCommonLibs/Category": [
+
+        ],
+        "TCCommonLibs/Const": [
+
+        ]
+      }
+    }
+  ]
+}
