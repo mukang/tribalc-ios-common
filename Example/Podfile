@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TCCommonLibs_Example' do
+  pod 'TCCommonLibs', :path => '../'
+
+  target 'TCCommonLibs_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
