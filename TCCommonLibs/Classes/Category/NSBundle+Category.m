@@ -14,7 +14,7 @@
     return [self bundleWithURL:[self tc_commonLibsBundleURL]];
 }
 
-+ (NSBundle *)tc_commonLibsBundleURL {
++ (NSURL *)tc_commonLibsBundleURL {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     return [bundle URLForResource:@"TCCommonLibs" withExtension:@"bundle"];
 }

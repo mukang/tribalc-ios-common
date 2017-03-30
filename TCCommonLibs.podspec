@@ -37,12 +37,12 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-  s.subspec 'Const' do |const|
-    const.source_files = 'TCCommonLibs/Classes/Const/**/*'
-    const.public_header_files = 'TCCommonLibs/Classes/Const/**/*.h'
+  s.subspec 'Utility' do |utility|
+    utility.source_files = 'TCCommonLibs/Classes/Utility/**/*'
+    utility.public_header_files = 'TCCommonLibs/Classes/Utility/**/*.h'
   end
 
   s.subspec 'Category' do |category|
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
     category.public_header_files = 'TCCommonLibs/Classes/Category/**/*.h'
     category.dependency 'SDWebImage'
     category.dependency 'MBProgressHUD'
-    category.dependency 'TCCommonLibs/Const'
+    category.dependency 'TCCommonLibs/Utility'
   end
 
   s.subspec 'DicToModel' do |dicToModel|
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
     webService.source_files = 'TCCommonLibs/Classes/WebService/**/*'
     webService.public_header_files = 'TCCommonLibs/Classes/WebService/**/*.h'
     webService.dependency 'AFNetworking'
-    webService.dependency 'TCCommonLibs/Const'
+    webService.dependency 'TCCommonLibs/Utility'
   end
 
   s.subspec 'Controller' do |controller|
@@ -84,7 +84,8 @@ Pod::Spec.new do |s|
     ui.dependency 'MJRefresh'
     ui.dependency 'Masonry'
     ui.dependency 'TCCommonLibs/Category'
-    ui.dependency 'TCCommonLibs/Const'
+    ui.dependency 'TCCommonLibs/Utility'
+    ui.dependency 'TCCommonLibs/Tools'
   end
 
 end

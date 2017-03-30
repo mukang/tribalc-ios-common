@@ -23,11 +23,15 @@
       "TCCommonLibs/Assets/*.png"
     ]
   },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
   "subspecs": [
     {
-      "name": "Const",
-      "source_files": "TCCommonLibs/Classes/Const/**/*",
-      "public_header_files": "TCCommonLibs/Classes/Const/**/*.h"
+      "name": "Utility",
+      "source_files": "TCCommonLibs/Classes/Utility/**/*",
+      "public_header_files": "TCCommonLibs/Classes/Utility/**/*.h"
     },
     {
       "name": "Category",
@@ -40,7 +44,7 @@
         "MBProgressHUD": [
 
         ],
-        "TCCommonLibs/Const": [
+        "TCCommonLibs/Utility": [
 
         ]
       }
@@ -68,7 +72,7 @@
         "AFNetworking": [
 
         ],
-        "TCCommonLibs/Const": [
+        "TCCommonLibs/Utility": [
 
         ]
       }
@@ -100,7 +104,10 @@
         "TCCommonLibs/Category": [
 
         ],
-        "TCCommonLibs/Const": [
+        "TCCommonLibs/Utility": [
+
+        ],
+        "TCCommonLibs/Tools": [
 
         ]
       }
