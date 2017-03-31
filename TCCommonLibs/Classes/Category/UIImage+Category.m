@@ -96,7 +96,7 @@
 }
 
 + (UIImage *)placeholderImageWithSize:(CGSize)size {
-    return [self placeholderImageWithNamed:@"placeholder_image" imageSize:size custom:NO];
+    return [self placeholderImageWithNamed:@"placeholder_image@2x" imageSize:size custom:NO];
 }
 
 @end

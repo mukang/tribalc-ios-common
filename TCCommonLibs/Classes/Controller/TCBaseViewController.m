@@ -28,7 +28,7 @@
                                                                     NSFontAttributeName : [UIFont systemFontOfSize:16],
                                                                     NSForegroundColorAttributeName : [UIColor whiteColor]
                                                                     };
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_item.png"
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_item@2x.png"
                                                                                               inBundle:commonLibsBundle
                                                                          compatibleWithTraitCollection:nil]
                                                                              style:UIBarButtonItemStylePlain
