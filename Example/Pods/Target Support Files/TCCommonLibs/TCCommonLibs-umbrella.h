@@ -30,7 +30,7 @@
 #import "TCRefreshFooter.h"
 #import "TCRefreshHeader.h"
 #import "TCTabView.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 #import "TCFunctions.h"
 #import "TCClient.h"
 #import "TCClientConfig.h"

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCCommonLibs'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'A powerful common libs.'
 
 # This description is used to generate tags and improve search results.

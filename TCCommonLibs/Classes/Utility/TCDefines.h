@@ -1,13 +1,12 @@
 //
-//  TCConst.h
-//  store
+//  TCDefines.h
+//  Pods
 //
-//  Created by 穆康 on 2017/2/23.
-//  Copyright © 2017年 杭州部落公社科技有限公司. All rights reserved.
+//  Created by 穆康 on 2017/3/31.
+//
 //
 
-#ifndef _TCConst_h
-#define _TCConst_h
+#import <Foundation/Foundation.h>
 
 /** 用户位置的经纬度key */
 extern NSString *const TCBuluoUserLocationCoordinateKey;
@@ -16,6 +15,8 @@ extern NSString *const TCClientUnauthorizedNotification;
 /** 客服电话 */
 extern NSString *const TCCommonServiceTel;
 
+#ifndef _TCDefines_h
+#define _TCDefines_h
 
 // 颜色
 #define TCRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
@@ -53,3 +54,7 @@ extern NSString *const TCCommonServiceTel;
 #define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 
 #endif
+
+@interface TCDefines : NSObject
+
+@end

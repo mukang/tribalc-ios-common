@@ -7,7 +7,7 @@
 //
 
 #import "TCDatePickerView.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 #import "UIView+Category.h"
 
 static CGFloat const duration = 0.25;

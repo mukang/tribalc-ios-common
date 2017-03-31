@@ -9,7 +9,7 @@
 #import "UIImage+Category.h"
 #import "NSBundle+Category.h"
 #import "SDImageCache.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 @implementation UIImage (Category)
 

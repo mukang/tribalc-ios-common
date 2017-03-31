@@ -11,7 +11,7 @@
 #import "UIImage+Category.h"
 #import "SDWebImage/UIImageView+WebCache.h"
 #import "Masonry.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 @interface TCPicturesHeaderView () <UIScrollViewDelegate>
 

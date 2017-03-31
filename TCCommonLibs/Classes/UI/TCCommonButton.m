@@ -9,7 +9,7 @@
 #import "TCCommonButton.h"
 #import "UIImage+Category.h"
 #import "UIView+Category.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 @implementation TCCommonButton
 

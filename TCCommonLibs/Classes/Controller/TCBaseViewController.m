@@ -9,7 +9,7 @@
 #import "TCBaseViewController.h"
 #import "UIImage+Category.h"
 #import "NSBundle+Category.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 @interface TCBaseViewController ()
 

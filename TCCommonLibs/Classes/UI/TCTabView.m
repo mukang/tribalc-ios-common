@@ -7,7 +7,7 @@
 //
 
 #import "TCTabView.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 #define kBtnWidth 45.0
 

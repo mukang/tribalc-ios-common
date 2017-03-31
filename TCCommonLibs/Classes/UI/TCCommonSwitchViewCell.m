@@ -7,7 +7,7 @@
 //
 
 #import "TCCommonSwitchViewCell.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 #import "Masonry.h"
 
 @implementation TCCommonSwitchViewCell

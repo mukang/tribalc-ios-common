@@ -8,7 +8,7 @@
 
 #import "TCClient.h"
 #import "TCClientConfig.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 
 #import "AFNetworking.h"
 

@@ -7,7 +7,7 @@
 //
 
 #import "TCCommonSubtitleViewCell.h"
-#import "TCConst.h"
+#import "TCDefines.h"
 #import "Masonry.h"
 
 @implementation TCCommonSubtitleViewCell

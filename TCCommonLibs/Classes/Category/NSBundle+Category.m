@@ -7,6 +7,7 @@
 //
 
 #import "NSBundle+Category.h"
+#import "TCDefines.h"
 
 @implementation NSBundle (Category)
 
@@ -15,7 +16,7 @@
 }
 
 + (NSURL *)tc_commonLibsBundleURL {
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSBundle *bundle = [NSBundle bundleForClass:[TCDefines class]];
     return [bundle URLForResource:@"TCCommonLibs" withExtension:@"bundle"];
 }
 
