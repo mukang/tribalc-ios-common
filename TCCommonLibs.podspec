@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCCommonLibs'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'A powerful common libs.'
 
 # This description is used to generate tags and improve search results.
@@ -49,7 +49,6 @@ Pod::Spec.new do |s|
     category.source_files = 'TCCommonLibs/Classes/Category/**/*'
     category.public_header_files = 'TCCommonLibs/Classes/Category/**/*.h'
     category.dependency 'SDWebImage'
-    category.dependency 'MBProgressHUD'
     category.dependency 'TCCommonLibs/Utility'
   end
 

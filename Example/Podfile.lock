@@ -15,37 +15,35 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.0.2)
-  - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.12)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TCCommonLibs (0.4.1):
-    - TCCommonLibs/Category (= 0.4.1)
-    - TCCommonLibs/Controller (= 0.4.1)
-    - TCCommonLibs/DicToModel (= 0.4.1)
-    - TCCommonLibs/Tools (= 0.4.1)
-    - TCCommonLibs/UI (= 0.4.1)
-    - TCCommonLibs/Utility (= 0.4.1)
-    - TCCommonLibs/WebService (= 0.4.1)
-  - TCCommonLibs/Category (0.4.1):
-    - MBProgressHUD
+  - TCCommonLibs (0.4.2):
+    - TCCommonLibs/Category (= 0.4.2)
+    - TCCommonLibs/Controller (= 0.4.2)
+    - TCCommonLibs/DicToModel (= 0.4.2)
+    - TCCommonLibs/Tools (= 0.4.2)
+    - TCCommonLibs/UI (= 0.4.2)
+    - TCCommonLibs/Utility (= 0.4.2)
+    - TCCommonLibs/WebService (= 0.4.2)
+  - TCCommonLibs/Category (0.4.2):
     - SDWebImage
     - TCCommonLibs/Utility
-  - TCCommonLibs/Controller (0.4.1):
+  - TCCommonLibs/Controller (0.4.2):
     - TCCommonLibs/Category
-  - TCCommonLibs/DicToModel (0.4.1)
-  - TCCommonLibs/Tools (0.4.1):
+  - TCCommonLibs/DicToModel (0.4.2)
+  - TCCommonLibs/Tools (0.4.2):
     - TCCommonLibs/WebService
-  - TCCommonLibs/UI (0.4.1):
+  - TCCommonLibs/UI (0.4.2):
     - Masonry
     - MJRefresh
     - SDWebImage
     - TCCommonLibs/Category
     - TCCommonLibs/Tools
     - TCCommonLibs/Utility
-  - TCCommonLibs/Utility (0.4.1)
-  - TCCommonLibs/WebService (0.4.1):
+  - TCCommonLibs/Utility (0.4.2)
+  - TCCommonLibs/WebService (0.4.2):
     - AFNetworking
     - TCCommonLibs/Utility
 
@@ -59,10 +57,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TCCommonLibs: 48844c45c37dd0a165c546bffda9ee8b1f391d20
+  TCCommonLibs: d407c2a0b2ff02f813e0e9268900846fbbfe40fd
 
 PODFILE CHECKSUM: d155c35cce33436ff06936ef5c9f37021a0d6d67
 
