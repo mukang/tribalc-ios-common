@@ -9,6 +9,7 @@
 #import "TCDefines.h"
 
 NSString *const TCBuluoUserLocationCoordinateKey = @"TCBuluoUserLocationCoordinateKey";
+NSString *const TCClientBaseURLKey = @"TCClientBaseURLKey";
 NSString *const TCClientUnauthorizedNotification = @"TCClientUnauthorizedNotification";
 NSString *const TCCommonServiceTel = @"4008-252-987";
 

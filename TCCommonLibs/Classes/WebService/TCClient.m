@@ -34,7 +34,13 @@
 - (instancetype)initPrivate {
     if (self = [super init]) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-        NSURL *baseURL = [NSURL URLWithString:TCCLIENT_BASE_URL];
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        NSString *baseURLStr = [userDefaults objectForKey:TCClientBaseURLKey];
+        if (baseURLStr == nil || ![baseURLStr isKindOfClass:[NSString class]]) {
+            baseURLStr = TCCLIENT_BASE_URL;
+            [userDefaults setObject:baseURLStr forKey:TCClientBaseURLKey];
+        }
+        NSURL *baseURL = [NSURL URLWithString:baseURLStr];
         _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL sessionConfiguration:configuration];
         _sessionManager.completionQueue = dispatch_queue_create("com.buluo-gs.queue", NULL);
         _requestSerializer = [AFJSONRequestSerializer serializer];

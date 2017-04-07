@@ -10,6 +10,8 @@
 
 /** 用户位置的经纬度key */
 extern NSString *const TCBuluoUserLocationCoordinateKey;
+/** URL */
+extern NSString *const TCClientBaseURLKey;
 /** 需要认证信息或认证信息失败的通知 */
 extern NSString *const TCClientUnauthorizedNotification;
 /** 客服电话 */
