@@ -1,6 +1,6 @@
 {
   "name": "TCCommonLibs",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "summary": "A powerful common libs.",
   "description": "TCCommonLibs is a powerful common libs.",
   "homepage": "http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common.git",
-    "tag": "0.4.4"
+    "tag": "0.4.5"
   },
   "platforms": {
     "ios": "8.0"

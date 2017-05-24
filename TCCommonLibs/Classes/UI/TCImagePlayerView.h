@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class TCImagePlayerView;
 
 @protocol TCImagePlayerViewDelegate <NSObject>
 
 - (void)didScrollToIndex:(NSInteger)index;
+
+- (void)imagePlayerView:(TCImagePlayerView *)view didSelectedImageWithIndex:(NSInteger)index;
 
 @end
 

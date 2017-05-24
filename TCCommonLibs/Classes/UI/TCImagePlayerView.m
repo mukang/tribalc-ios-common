@@ -205,7 +205,9 @@ static NSInteger const plusNum = 2;  // 需要加上的数
 }
 
 - (void)handleTapImageView:(UITapGestureRecognizer *)sender {
-    
+    if ([self.delegate respondsToSelector:@selector(imagePlayerView:didSelectedImageWithIndex:)]) {
+        [self.delegate imagePlayerView:self didSelectedImageWithIndex:sender.view.tag];
+    }
 }
 
 #pragma mark - UIScrollViewDelegate
