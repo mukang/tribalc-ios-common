@@ -93,7 +93,12 @@ static NSInteger const plusNum = 2;  // 需要加上的数
             imageView.image = [UIImage imageNamed:pictures[0]];
         }else {
             NSString *URLString = pictures[0];
-            NSURL *URL = [TCImageURLSynthesizer synthesizeImageURLWithPath:URLString];
+            NSURL *URL = nil;
+            if ([URLString hasPrefix:@"http://"]) {
+                URL = [NSURL URLWithString:URLString];
+            } else {
+                URL = [TCImageURLSynthesizer synthesizeImageURLWithPath:URLString];
+            }
             UIImage *placeholderImage = [UIImage placeholderImageWithSize:imageView.size];
             [imageView sd_setImageWithURL:URL placeholderImage:placeholderImage options:SDWebImageRetryFailed];
         }
@@ -133,7 +138,12 @@ static NSInteger const plusNum = 2;  // 需要加上的数
             imageView.image = [UIImage imageNamed:pictures[imageIndex]];
         }else {
             NSString *URLString = pictures[imageIndex];
-            NSURL *URL = [TCImageURLSynthesizer synthesizeImageURLWithPath:URLString];
+            NSURL *URL = nil;
+            if ([URLString hasPrefix:@"http://"]) {
+                URL = [NSURL URLWithString:URLString];
+            } else {
+                URL = [TCImageURLSynthesizer synthesizeImageURLWithPath:URLString];
+            }
             UIImage *placeholderImage = [UIImage placeholderImageWithSize:imageView.size];
             [imageView sd_setImageWithURL:URL placeholderImage:placeholderImage options:SDWebImageRetryFailed];
         }
