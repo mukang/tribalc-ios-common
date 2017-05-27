@@ -11,6 +11,7 @@
 NSString *const TCBuluoUserLocationCoordinateKey = @"TCBuluoUserLocationCoordinateKey";
 NSString *const TCClientBaseURLKey = @"TCClientBaseURLKey";
 NSString *const TCClientUnauthorizedNotification = @"TCClientUnauthorizedNotification";
+NSString *const TCClientNeedForceUpdateNotification = @"TCClientNeedForceUpdateNotification";
 NSString *const TCCommonServiceTel = @"4008-252-987";
 
 #ifndef _TCDefines_m

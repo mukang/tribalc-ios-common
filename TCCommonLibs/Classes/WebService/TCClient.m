@@ -104,6 +104,11 @@
                 if (codeInResponse >= 400) {
                     NSString *description = (responseData[@"message"] == [NSNull null]) ? nil : responseData[@"message"];
                     error = [TCClientRequestError errorWithCode:codeInResponse andDescription:description];
+                    if (codeInResponse == 505) { // 需要强制更新
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [[NSNotificationCenter defaultCenter] postNotificationName:TCClientNeedForceUpdateNotification object:nil];
+                        });
+                    }
                 } else {
                     dataInResponse = responseData[@"data"];
                 }
