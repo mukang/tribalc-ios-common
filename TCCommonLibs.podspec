@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCCommonLibs'
-  s.version          = '0.4.7'
+  s.version          = '0.4.8'
   s.summary          = 'A powerful common libs.'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
      'TCCommonLibs' => ['TCCommonLibs/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'TCCommonLibs/Classes/TCCommonLibs.h'
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 

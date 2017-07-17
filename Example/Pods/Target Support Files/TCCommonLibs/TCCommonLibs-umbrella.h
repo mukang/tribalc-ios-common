@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "TCCommonLibs.h"
 #import "NSBundle+Category.h"
 #import "UIImage+Category.h"
 #import "UIView+Category.h"
