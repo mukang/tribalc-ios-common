@@ -14,7 +14,6 @@
 #import "UIImage+Category.h"
 #import "UIView+Category.h"
 #import "TCBaseViewController.h"
-#import "TCCommonLibs.h"
 #import "NSObject+TCModel.h"
 #import "TCArchiveService.h"
 #import "TCImageCompressHandler.h"
