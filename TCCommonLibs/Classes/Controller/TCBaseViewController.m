@@ -21,12 +21,12 @@
     [super viewDidLoad];
     
     NSBundle *commonLibsBundle = [NSBundle tc_commonLibsBundle];
-    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setShadowImage:[UIImage imageNamed:@"TransparentPixel.png" inBundle:commonLibsBundle compatibleWithTraitCollection:nil]];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:TCBlackColor] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setTintColor:TCBlackColor];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setShadowImage:[UIImage imageWithColor:TCSeparatorLineColor]];
     self.navigationController.navigationBar.titleTextAttributes = @{
                                                                     NSFontAttributeName : [UIFont systemFontOfSize:16],
-                                                                    NSForegroundColorAttributeName : [UIColor whiteColor]
+                                                                    NSForegroundColorAttributeName : TCBlackColor
                                                                     };
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_item@2x.png"
                                                                                               inBundle:commonLibsBundle
@@ -52,12 +52,6 @@
 
 - (void)handleClickBackButton:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-#pragma mark - Status Bar
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {
