@@ -38,6 +38,10 @@
             normalImage = [UIImage imageWithColor:TCRGBColor(252, 108, 38)];
             highlightedImage = [UIImage imageWithColor:TCRGBColor(236, 85, 11)];
             break;
+        case TCCommonButtonColorPurple:
+            normalImage = [UIImage imageWithColor:TCRGBColor(151, 171, 234)];
+            highlightedImage = [UIImage imageWithColor:TCRGBColor(112, 139, 224)];
+            break;
             
         default:
             break;
@@ -74,6 +78,10 @@
         case TCCommonButtonColorOrange:
             normalImage = [UIImage imageWithColor:TCRGBColor(252, 108, 38)];
             highlightedImage = [UIImage imageWithColor:TCRGBColor(236, 85, 11)];
+            break;
+        case TCCommonButtonColorPurple:
+            normalImage = [UIImage imageWithColor:TCRGBColor(151, 171, 234)];
+            highlightedImage = [UIImage imageWithColor:TCRGBColor(112, 139, 224)];
             break;
             
         default:

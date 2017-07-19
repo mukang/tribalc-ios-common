@@ -10,7 +10,8 @@
 
 typedef NS_ENUM(NSInteger, TCCommonButtonColor) {
     TCCommonButtonColorBlue,
-    TCCommonButtonColorOrange
+    TCCommonButtonColorOrange,
+    TCCommonButtonColorPurple
 };
 
 @interface TCCommonButton : UIButton
