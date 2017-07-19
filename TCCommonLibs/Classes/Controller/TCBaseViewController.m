@@ -22,7 +22,7 @@
     
     NSBundle *commonLibsBundle = [NSBundle tc_commonLibsBundle];
     [self.navigationController.navigationBar setTintColor:TCBlackColor];
-    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage imageWithColor:TCSeparatorLineColor]];
     self.navigationController.navigationBar.titleTextAttributes = @{
                                                                     NSFontAttributeName : [UIFont systemFontOfSize:16],
