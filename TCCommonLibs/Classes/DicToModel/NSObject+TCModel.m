@@ -128,13 +128,19 @@
             objectClassInDictionaryMap = [[self class] performSelector:@selector(objectClassInDictionary)];
         }
         
+        NSDictionary *systemVariablesMap = TCMODEL_SYSTEM_VARIABLES_MAP;
+        if (propertyCount>0 && [[self class] respondsToSelector:@selector(replacedKeyFromPropertyName)]) {
+            NSMutableDictionary *replacedKeyDic = [NSMutableDictionary dictionaryWithDictionary:[[self class] performSelector:@selector(replacedKeyFromPropertyName)]];
+            [replacedKeyDic addEntriesFromDictionary:systemVariablesMap];
+            systemVariablesMap = [replacedKeyDic copy];
+        }
+        
         for (int i=0; i<propertyCount; i++) {
             objc_property_t property = propertyList[i];
             const char *c_propertyName = property_getName(property);
             NSString *propertyName = [NSString stringWithCString:c_propertyName encoding:[NSString defaultCStringEncoding]];
             
             id value = nil;
-            NSDictionary *systemVariablesMap = TCMODEL_SYSTEM_VARIABLES_MAP;
             if ([systemVariablesMap objectForKey:propertyName]) {
                 value = [dic objectForKey:[systemVariablesMap objectForKey:propertyName]];
             } else {
@@ -189,6 +195,14 @@
     
     unsigned int propertyCount;
     objc_property_t *propertyList = class_copyPropertyList([self class], &propertyCount);
+    
+    NSDictionary *systemVariablesMap = TCMODEL_SYSTEM_VARIABLES_MAP;
+    if (propertyCount>0 && [[self class] respondsToSelector:@selector(replacedKeyFromPropertyName)]) {
+        NSMutableDictionary *replacedKeyDic = [NSMutableDictionary dictionaryWithDictionary:[[self class] performSelector:@selector(replacedKeyFromPropertyName)]];
+        [replacedKeyDic addEntriesFromDictionary:systemVariablesMap];
+        systemVariablesMap = [replacedKeyDic copy];
+    }
+    
     for (int i=0; i<propertyCount; i++) {
         objc_property_t property = propertyList[i];
         const char *c_propertyName = property_getName(property);
@@ -214,7 +228,6 @@
                 }
             }
             
-            NSDictionary *systemVariablesMap = TCMODEL_SYSTEM_VARIABLES_MAP;
             if ([systemVariablesMap objectForKey:propertyName]) {
                 [dic setObject:value forKey:[systemVariablesMap objectForKey:propertyName]];
             } else {
@@ -232,6 +245,10 @@
 }
 
 + (NSDictionary *)objectClassInDictionary {
+    return nil;
+}
+
++ (NSDictionary *)replacedKeyFromPropertyName {
     return nil;
 }
 

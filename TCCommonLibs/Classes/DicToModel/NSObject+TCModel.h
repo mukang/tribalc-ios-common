@@ -25,6 +25,7 @@
 
 + (NSDictionary *)objectClassInArray;
 + (NSDictionary *)objectClassInDictionary;
++ (NSDictionary *)replacedKeyFromPropertyName;
 
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (id)initWithCoder:(NSCoder *)aDecoder;
