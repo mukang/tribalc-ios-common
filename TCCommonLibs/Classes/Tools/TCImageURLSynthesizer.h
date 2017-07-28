@@ -21,6 +21,14 @@ extern NSString *const kTCImageSourceOSS;
 + (NSURL *)synthesizeImageURLWithPath:(NSString *)path;
 
 /**
+ 合成头像图片资源的URL
+ 
+ @param path 图片资源路径（由服务器返回）
+ @return 图片资源的URL
+ */
++ (NSURL *)synthesizeAvatarImageURLWithPath:(NSString *)path userID:(NSString *)userID;
+
+/**
  合成图片资源的路径（合成的路径要上传给服务器）
 
  @param name 图片名字，名字开头不能有“/”
