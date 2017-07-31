@@ -20,7 +20,7 @@ NSString *const kTCImageSourceOSS = @"oss";
     NSArray *pathParts = [path componentsSeparatedByString:TCPathSeparator];
     NSString *lastPart = [pathParts lastObject];
     
-    NSString *imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingPathComponent:lastPart];
+    NSString *imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@", lastPart];
     
     return [NSURL URLWithString:imageURLString];
 }
@@ -29,7 +29,7 @@ NSString *const kTCImageSourceOSS = @"oss";
     if (!userID) return nil;
     
     int64_t timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
-    NSString *imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/icon.jpg?t=%zd", userID, timestamp]];
+    NSString *imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?t=%zd", userID, timestamp];
     
     return [NSURL URLWithString:imageURLString];
 }
