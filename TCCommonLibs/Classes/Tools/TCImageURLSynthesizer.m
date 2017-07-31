@@ -25,11 +25,16 @@ NSString *const kTCImageSourceOSS = @"oss";
     return [NSURL URLWithString:imageURLString];
 }
 
-+ (NSURL *)synthesizeAvatarImageURLWithUserID:(NSString *)userID {
++ (NSURL *)synthesizeAvatarImageURLWithUserID:(NSString *)userID needTimestamp:(BOOL)needTimestamp {
     if (!userID) return nil;
     
-    int64_t timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
-    NSString *imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?t=%zd", userID, timestamp];
+    NSString *imageURLString = nil;
+    if (needTimestamp) {
+        int64_t timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
+        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?t=%zd", userID, timestamp];
+    } else {
+        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg", userID];
+    }
     
     return [NSURL URLWithString:imageURLString];
 }

@@ -22,11 +22,12 @@ extern NSString *const kTCImageSourceOSS;
 
 /**
  合成头像图片资源的URL
- 
+
  @param userID 用户id
+ @param needTimestamp 是否需要添加时间戳
  @return 图片资源的URL
  */
-+ (NSURL *)synthesizeAvatarImageURLWithUserID:(NSString *)userID;
++ (NSURL *)synthesizeAvatarImageURLWithUserID:(NSString *)userID needTimestamp:(BOOL)needTimestamp;
 
 /**
  合成图片资源的路径（合成的路径要上传给服务器）
