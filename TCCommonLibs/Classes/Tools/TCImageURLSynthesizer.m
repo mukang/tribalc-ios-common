@@ -31,9 +31,9 @@ NSString *const kTCImageSourceOSS = @"oss";
     NSString *imageURLString = nil;
     if (needTimestamp) {
         int64_t timestamp = [[NSDate date] timeIntervalSince1970] * 1000;
-        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?t=%zd", userID, timestamp];
+        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?x-oss-process=image/resize,m_fill,h_200,w_200&t=%zd", userID, timestamp];
     } else {
-        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg", userID];
+        imageURLString = [TCCLIENT_RESOURCES_BASE_URL stringByAppendingFormat:@"/%@/icon.jpg?x-oss-process=image/resize,m_fill,h_200,w_200", userID];
     }
     
     return [NSURL URLWithString:imageURLString];
