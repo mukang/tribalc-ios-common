@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TCCommonLibs'
-  s.version          = '0.5.5'
+  s.version          = '0.5.6'
   s.summary          = 'A powerful common libs.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
                        TCCommonLibs is a powerful common libs.
                        DESC
 
-  s.homepage         = 'http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common'
+  s.homepage         = 'http://gitlab.buluo-gs.com/iOS/common'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mukang' => 'mukang@buluo-gs.com' }
-  s.source           = { :git => 'http://dev.buluo-gs.com/gitlab/root/tribalc-ios-common.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://gitlab.buluo-gs.com/iOS/common.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
