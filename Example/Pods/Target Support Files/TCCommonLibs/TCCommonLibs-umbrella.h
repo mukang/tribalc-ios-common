@@ -29,7 +29,6 @@
 #import "TCPicturesHeaderView.h"
 #import "TCRefreshFooter.h"
 #import "TCRefreshHeader.h"
-#import "TCTabView.h"
 #import "TCDefines.h"
 #import "TCFunctions.h"
 #import "TCClient.h"

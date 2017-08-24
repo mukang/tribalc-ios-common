@@ -1,6 +1,6 @@
 {
   "name": "TCCommonLibs",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "summary": "A powerful common libs.",
   "description": "TCCommonLibs is a powerful common libs.",
   "homepage": "http://gitlab.buluo-gs.com/iOS/common",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "http://gitlab.buluo-gs.com/iOS/common.git",
-    "tag": "0.5.6"
+    "tag": "0.5.7"
   },
   "platforms": {
     "ios": "8.0"
