@@ -28,12 +28,25 @@
                                                                     NSFontAttributeName : [UIFont systemFontOfSize:16],
                                                                     NSForegroundColorAttributeName : TCBlackColor
                                                                     };
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_item@2x.png"
-                                                                                              inBundle:commonLibsBundle
-                                                                         compatibleWithTraitCollection:nil]
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:self
-                                                                            action:@selector(handleClickBackButton:)];
+    if (@available(iOS 11.0,*)) {
+        UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [backButton setImage:[UIImage imageNamed:@"nav_back_item@2x.png"
+                                        inBundle:commonLibsBundle
+                   compatibleWithTraitCollection:nil]
+                    forState:UIControlStateNormal];
+        [backButton addTarget:self
+                       action:@selector(handleClickBackButton:)
+             forControlEvents:UIControlEventTouchUpInside];
+        [backButton setContentEdgeInsets:UIEdgeInsetsMake(5, 0, 5, 40)];
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    } else {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"nav_back_item@2x.png"
+                                                                                                  inBundle:commonLibsBundle
+                                                                             compatibleWithTraitCollection:nil]
+                                                                                 style:UIBarButtonItemStylePlain
+                                                                                target:self
+                                                                                action:@selector(handleClickBackButton:)];
+    }
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
